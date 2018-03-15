@@ -55,11 +55,7 @@ public class TovaryDaoImpl implements TovaryDao {
             String name = resultSet.getString("name");
             int price = resultSet.getInt("price");
 
-            Tovar tovar = Tovar.builder;
-                    .id(id)
-                    .name(name)
-                    .price(price)
-                    .build();
+            Tovar tovar = new Tovar(id, name, price);
 
             listTovar.add(tovar);
         }

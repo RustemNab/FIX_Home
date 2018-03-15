@@ -1,0 +1,5 @@
+models\Tovar$TovarBuilder.class
+models\Tovar.class
+dao\impl\TovaryDaoImpl.class
+dao\TovaryDao.class
+TovaryServlet.class

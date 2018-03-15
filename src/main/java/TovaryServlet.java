@@ -48,11 +48,11 @@ public class TovaryServlet extends HttpServlet {
 
             try {
                 getTovarList(request, response);
-                response.sendRedirect("products");
+                response.sendRedirect("tovary");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            response.sendRedirect("products");
+            response.sendRedirect("tovary");
 
     }
 

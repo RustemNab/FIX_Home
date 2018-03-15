@@ -8,6 +8,7 @@
         <param-value>jdbc:postgresql://localhost:5432/postgres</param-value>
     </context-param>
 
+
     <context-param>
         <param-name>jdbcUsername</param-name>
         <param-value>postgres</param-value>
@@ -25,7 +26,7 @@
 
     <servlet-mapping>
         <servlet-name>TovaryServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/tovary</url-pattern>
     </servlet-mapping>
 
 

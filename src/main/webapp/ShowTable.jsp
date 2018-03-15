@@ -18,7 +18,6 @@
     <th>ID</th>
     <th>Name</th>
     <th>Price</th>
-    <th>Year</th>
 </tr>
     <c:forEach var="tovar" items="${tovaryArray}">
             <tr>
