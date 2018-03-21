@@ -42,4 +42,9 @@ public class Tovar {
         this.name = name;
         this.price = price;
     }
+
+    public  Tovar(String name, int price){
+        this.name = name;
+        this.price = price;
+    }
 }

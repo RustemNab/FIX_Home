@@ -11,7 +11,10 @@ import java.util.List;
  * Created by Рустем on 14.03.2018.
  */
 public class TovaryDaoImpl implements TovaryDao {
-    private static String SELECT_ALL_FROM_TOVARY_SQL = "SELECT * FROM Tovary ORDER BY id";
+    private static String SELECT_ALL_FROM_TOVARY_SQL = "SELECT * FROM tovary ORDER BY id";
+    private static String INSERT_TOVAR_SQL = "INSERT INTO tovary (name, price) VALUES (?, ?)";
+    private static String UPDATE_TOVAR_SQL = "UPDATE tovary SET name = ?, price = ? WHERE id = ?";
+
 
     private String jdbcURL;
     private String jdbcUsername;
@@ -66,6 +69,35 @@ public class TovaryDaoImpl implements TovaryDao {
         disconnect();
 
         return listTovar;
+    }
+
+    public boolean update(int id, String name, int price) throws SQLException {
+        connect();
+
+        PreparedStatement statement = jdbcConnection.prepareStatement(UPDATE_TOVAR_SQL);
+        statement.setString(1, name);
+        statement.setDouble(2, price);
+        statement.setInt(3, id);
+
+        boolean rowUpdate = statement.executeUpdate() > 0;
+        statement.close();
+        disconnect();
+
+        return rowUpdate;
+    }
+
+    public boolean create(Tovar tovar) throws SQLException {
+        connect();
+
+        PreparedStatement statement = jdbcConnection.prepareStatement(INSERT_TOVAR_SQL);
+        statement.setString(1, tovar.getName());
+        statement.setInt(2, tovar.getPrice());
+
+        boolean rowInserted = statement.executeUpdate() > 0;
+        statement.close();
+        disconnect();
+
+        return rowInserted;
     }
 
 

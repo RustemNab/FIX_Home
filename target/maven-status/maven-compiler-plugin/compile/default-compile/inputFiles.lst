@@ -1,4 +1,9 @@
 D:\FIX_Home\src\main\java\dao\TovaryDao.java
+D:\FIX_Home\src\main\java\models\User.java
+D:\FIX_Home\src\main\java\dao\impl\UserDaoImpl.java
+D:\FIX_Home\src\main\java\Servlets\LoginServlet.java
 D:\FIX_Home\src\main\java\dao\impl\TovaryDaoImpl.java
 D:\FIX_Home\src\main\java\models\Tovar.java
-D:\FIX_Home\src\main\java\TovaryServlet.java
+D:\FIX_Home\src\main\java\Servlets\TovaryServlet.java
+D:\FIX_Home\src\main\java\dao\UserDao.java
+D:\FIX_Home\src\main\java\Servlets\SignUpServlet.java

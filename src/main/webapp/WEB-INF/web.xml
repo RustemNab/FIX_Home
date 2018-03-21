@@ -21,13 +21,15 @@
 
     <servlet>
         <servlet-name>TovaryServlet</servlet-name>
-        <servlet-class>TovaryServlet</servlet-class>
+        <servlet-class>Servlets.TovaryServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>TovaryServlet</servlet-name>
-        <url-pattern>/tovary</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+
 
 
 </web-app>

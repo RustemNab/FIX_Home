@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-14.00:53:39.555</IntrospectionTimestamp>
-      <IntrospectionStateNumber>558</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-03-19.12:14:39.757</IntrospectionTimestamp>
+      <IntrospectionStateNumber>577</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -29,48 +29,104 @@
     <schema id="8" parent="2" name="information_schema">
       <ObjectId>12113</ObjectId>
     </schema>
-    <sequence id="9" parent="3" name="tovary_id_seq">
-      <ObjectId>24595</ObjectId>
-      <StateNumber>557</StateNumber>
+    <sequence id="9" parent="3" name="users_id_seq">
+      <ObjectId>24607</ObjectId>
+      <StateNumber>575</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="10" parent="3" name="tovary">
-      <ObjectId>24589</ObjectId>
-      <StateNumber>551</StateNumber>
+    <sequence id="10" parent="3" name="tovary_id_seq">
+      <ObjectId>24598</ObjectId>
+      <StateNumber>563</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="11" parent="3" name="tovary">
+      <ObjectId>24600</ObjectId>
+      <StateNumber>563</StateNumber>
     </table>
-    <column id="11" parent="10" name="id">
+    <table id="12" parent="3" name="users">
+      <ObjectId>24609</ObjectId>
+      <StateNumber>575</StateNumber>
+    </table>
+    <column id="13" parent="11" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>558</StateNumber>
+      <StateNumber>563</StateNumber>
       <SequenceName>tovary_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;tovary_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="12" parent="10" name="name">
+    <column id="14" parent="11" name="name">
       <Position>2</Position>
-      <DataType>varchar(30)|0</DataType>
-      <StateNumber>551</StateNumber>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>563</StateNumber>
     </column>
-    <column id="13" parent="10" name="price">
+    <column id="15" parent="11" name="price">
       <Position>3</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>563</StateNumber>
     </column>
-    <index id="14" parent="10" name="tovary_id_uindex">
-      <ObjectId>24594</ObjectId>
+    <index id="16" parent="11" name="tovary_id_uindex">
+      <ObjectId>24606</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="15" parent="10" name="tovary_pkey">
-      <ObjectId>24592</ObjectId>
+    <index id="17" parent="11" name="tovary_pkey">
+      <ObjectId>24604</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="16" parent="10" name="tovary_pkey">
-      <ObjectId>24593</ObjectId>
+    <key id="18" parent="11" name="tovary_pkey">
+      <ObjectId>24605</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tovary_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+      <SequenceName>users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="20" parent="12" name="login">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+    </column>
+    <column id="21" parent="12" name="password">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>575</StateNumber>
+    </column>
+    <column id="22" parent="12" name="username">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>575</StateNumber>
+    </column>
+    <index id="23" parent="12" name="users_id_uindex">
+      <ObjectId>24615</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="24" parent="12" name="users_pkey">
+      <ObjectId>24613</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="25" parent="12" name="users_login_uindex">
+      <ObjectId>24616</ObjectId>
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="12" name="users_pkey">
+      <ObjectId>24614</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

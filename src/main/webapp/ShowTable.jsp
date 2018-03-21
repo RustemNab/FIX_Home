@@ -9,11 +9,19 @@
          pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<!DOCTYPE html>
-
 <html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style type="text/css">
+        <%@include file="css/styles.css"%>
+    </style>
+</head>
 <body>
-<table width="40%" border="1">
+    <div class="form-style-2-heading" align="center">
+        All items!
+    </div>
+<table align="center">
 <tr>
     <th>ID</th>
     <th>Name</th>
@@ -26,7 +34,14 @@
                 <td><c:out value="${tovar.price}"/></td>
             </tr>
     </c:forEach>
-
 </table>
+    <h3>
+        <div align="center">
+            <a href="/new">Add new item</a>
+            &nbsp;&nbsp;&nbsp;
+            <!--<a href="/products">List all products</a>-->
+        </div>
+    </h3>
+
 </body>
 </html>

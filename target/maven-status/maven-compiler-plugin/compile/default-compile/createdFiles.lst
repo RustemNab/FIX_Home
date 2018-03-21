@@ -1,5 +1,11 @@
 models\Tovar$TovarBuilder.class
+dao\impl\UserDaoImpl.class
+Servlets\SignUpServlet.class
+models\User$UserBuilder.class
+Servlets\TovaryServlet.class
+models\User.class
+dao\UserDao.class
 models\Tovar.class
+Servlets\LoginServlet.class
 dao\impl\TovaryDaoImpl.class
 dao\TovaryDao.class
-TovaryServlet.class
