@@ -12,9 +12,9 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <style type="text/css">
-        <%@include file="css/styles.css"%>
+        <%@include file="../css/styles.css"%>
     </style>
 </head>
 <body>
@@ -27,17 +27,17 @@
     <th>Name</th>
     <th>Price</th>
 </tr>
-    <c:forEach var="tovar" items="${tovaryArray}">
+    <c:forEach var="product" items="${productsArray}">
             <tr>
-                <td><c:out value="${tovar.id}"/></td>
-                <td><c:out value="${tovar.name}"/></td>
-                <td><c:out value="${tovar.price}"/></td>
+                <td><c:out value="${product.id}"/></td>
+                <td><c:out value="${product.name}"/></td>
+                <td><c:out value="${product.price}"/></td>
             </tr>
     </c:forEach>
 </table>
     <h3>
         <div align="center">
-            <a href="/new">Add new item</a>
+            <a href="/add">Add new item</a>
             &nbsp;&nbsp;&nbsp;
             <!--<a href="/products">List all products</a>-->
         </div>

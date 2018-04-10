@@ -13,15 +13,15 @@
     <link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
     <style type="text/css">
-        <%@include file="css/styles.css"%>
+        <%@include file="../css/styles.css"%>
     </style>
 </head>
 <body>
 <div id="login">
     <form method="post" action="/login">
         <fieldset class="clearfix">
-        <label for="name">Login
-            <p><span class="fontawesome-user"></span><input class="input-field" type="text" id="name" name="name"></p>
+        <label for="login_">Login
+            <p><span class="fontawesome-user"></span><input class="input-field" type="text" id="login_" name="login_"></p>
         </label>
         <label for="password">Password
             <p><span class="fontawesome-lock"></span><input class="input-field" type="password" id="password" name="password"></p>

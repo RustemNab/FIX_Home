@@ -7,10 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/**
- * Created by Рустем on 20.03.2018.
- */
-@WebFilter("/tovary")
+@WebFilter("/products")
 public class AuthFilter implements Filter{
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -20,6 +17,7 @@ public class AuthFilter implements Filter{
     // на вход фильтр получает запрос, ответ, а также цепочку фильтров, которым следует отдать запрос далее.
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
+
         // выполняем преобразование Servlet-запросов-ответов в HTTP-запросы-ответы
         HttpServletRequest request = (HttpServletRequest)servletRequest;
         HttpServletResponse response = (HttpServletResponse)servletResponse;
@@ -33,6 +31,7 @@ public class AuthFilter implements Filter{
         }
         // отдаем запрос дальше в цепочку фильтров
         chain.doFilter(request, response);
+
     }
 
     @Override
