@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-19.12:14:39.757</IntrospectionTimestamp>
-      <IntrospectionStateNumber>577</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-10.20:40:59.926</IntrospectionTimestamp>
+      <IntrospectionStateNumber>600</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -30,8 +30,8 @@
       <ObjectId>12113</ObjectId>
     </schema>
     <sequence id="9" parent="3" name="users_id_seq">
-      <ObjectId>24607</ObjectId>
-      <StateNumber>575</StateNumber>
+      <ObjectId>24617</ObjectId>
+      <StateNumber>585</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
@@ -41,13 +41,13 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="11" parent="3" name="tovary">
+    <table id="11" parent="3" name="products">
       <ObjectId>24600</ObjectId>
-      <StateNumber>563</StateNumber>
+      <StateNumber>591</StateNumber>
     </table>
     <table id="12" parent="3" name="users">
-      <ObjectId>24609</ObjectId>
-      <StateNumber>575</StateNumber>
+      <ObjectId>24619</ObjectId>
+      <StateNumber>585</StateNumber>
     </table>
     <column id="13" parent="11" name="id">
       <Position>1</Position>
@@ -67,64 +67,57 @@
       <DataType>integer|0</DataType>
       <StateNumber>563</StateNumber>
     </column>
-    <index id="16" parent="11" name="tovary_id_uindex">
-      <ObjectId>24606</ObjectId>
+    <index id="16" parent="11" name="products_id_uindex">
+      <ObjectId>32792</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="17" parent="11" name="tovary_pkey">
-      <ObjectId>24604</ObjectId>
+    <index id="17" parent="11" name="products_pkey">
+      <ObjectId>32790</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="18" parent="11" name="tovary_pkey">
-      <ObjectId>24605</ObjectId>
+    <key id="18" parent="11" name="products_pkey">
+      <ObjectId>32791</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>tovary_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>products_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <column id="19" parent="12" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>575</StateNumber>
+      <StateNumber>585</StateNumber>
       <SequenceName>users_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="20" parent="12" name="login">
       <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>575</StateNumber>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>585</StateNumber>
     </column>
     <column id="21" parent="12" name="password">
       <Position>3</Position>
-      <DataType>varchar(100)|0</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>575</StateNumber>
+      <DataType>varchar(60)|0</DataType>
+      <StateNumber>600</StateNumber>
     </column>
-    <column id="22" parent="12" name="username">
+    <column id="22" parent="12" name="name">
       <Position>4</Position>
-      <DataType>varchar(50)|0</DataType>
-      <StateNumber>575</StateNumber>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>585</StateNumber>
     </column>
     <index id="23" parent="12" name="users_id_uindex">
-      <ObjectId>24615</ObjectId>
+      <ObjectId>24625</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <index id="24" parent="12" name="users_pkey">
-      <ObjectId>24613</ObjectId>
+      <ObjectId>24623</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="25" parent="12" name="users_login_uindex">
-      <ObjectId>24616</ObjectId>
-      <ColNames>login</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="26" parent="12" name="users_pkey">
-      <ObjectId>24614</ObjectId>
+    <key id="25" parent="12" name="users_pkey">
+      <ObjectId>24624</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
