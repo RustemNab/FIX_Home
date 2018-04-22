@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69f71c62-c2fe-469b-a2eb-abcbd309db4d" name="Default" comment="hometask five">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/CrudDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/ProductsDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/ProductsDaoHibernate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/UserDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/UserDaoHibernate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/impl/ProductsDaoHibernateImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/impl/ProductsDaoJdbcTemplateImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/impl/UserDaoHibernateImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/dao/impl/UserDaoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/filters/AuthFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/models/Product.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/models/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/models/hibernate/Product.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/models/hibernate/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/servlets/AddItemServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/servlets/LoginServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/servlets/ProductsServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/java/servlets/SignUpServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/resources/db.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/jsp/AddItem.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/jsp/Login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/jsp/ShowTable.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../FIX_Home/src/main/webapp/jsp/SignUp.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3/_metadata_/metadata" afterPath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/.idea/artifacts/FIX_Home_war_exploded.xml" afterPath="$PROJECT_DIR$/../FIX_Home/.idea/artifacts/FIX_Home_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3.xml" afterPath="$PROJECT_DIR$/../FIX_Home/.idea/dataSources/b60ce16f-8a2c-430e-81d4-c8f888b835a3.xml" />
+    <list default="true" id="69f71c62-c2fe-469b-a2eb-abcbd309db4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FIX_Home/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/FIX_Home.iml" afterPath="$PROJECT_DIR$/../FIX_Home/FIX_Home.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/pom.xml" afterPath="$PROJECT_DIR$/../FIX_Home/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../FIX_Home/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FIX_Home/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../FIX_Home/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/../FIX_Home/out/" />
     <ignored path="$PROJECT_DIR$/../FIX_Home/target/" />
@@ -1145,7 +1112,7 @@
       <workItem from="1524238380818" duration="5060000" />
       <workItem from="1524310494789" duration="459000" />
       <workItem from="1524426220373" duration="5782000" />
-      <workItem from="1524434077980" duration="61000" />
+      <workItem from="1524434077980" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="bug fixes">
       <created>1521124300370</created>
@@ -1168,11 +1135,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521785961668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hometask five">
+      <created>1524434166703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524434166703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170539000" />
+    <option name="totallyTimeSpent" value="170705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,7 +1159,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
