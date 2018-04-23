@@ -9,6 +9,11 @@
         <option value="$PROJECT_DIR$/../FIX_Home/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../FIX_Home/SpringBootDemo/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="9" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/../FIX_Home/out" />
