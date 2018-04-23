@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FIX_Home.iml" filepath="$PROJECT_DIR$/FIX_Home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FIX_Home/5Hometask.iml" filepath="$PROJECT_DIR$/../FIX_Home/5Hometask.iml" />
     </modules>
   </component>
 </project>
